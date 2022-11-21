@@ -1,0 +1,21 @@
+.single_of_product{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    background-color: white;
+    padding: 10px 20px;
+    height: 350px;
+    line-height: 1.7;
+}
+.single_img{
+    max-height: 60%;
+    object-fit: contain;
+}
+.cart_button{
+    background-color: gold;
+    width: 150px;
+    align-self: center;
+    border: 0.1px solid black;
+    padding: 5px;
+}
+
