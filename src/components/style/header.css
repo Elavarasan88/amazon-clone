@@ -39,7 +39,13 @@
     padding: 10px;
 }
 .header__option{
-    margin: 15px;
+    border: 1px solid #131921 ;
+    margin: 8px;
+    padding: 7px;
+}
+.header__option:hover{
+    border: 1px solid white;
+    border-radius: 4px;
 }
 .header__optionLineOne{
     font-size: 12px;
@@ -50,6 +56,13 @@
     font-weight: 600;
 }
 .header__option__cart{
+    margin: 7px;
+    padding: 3px;
     display: flex;
     align-items: center;
+    border: 1px solid #131921;
+}
+.header__option__cart:hover{
+    border: 1px solid white;
+    border-radius: 4px;
 }
