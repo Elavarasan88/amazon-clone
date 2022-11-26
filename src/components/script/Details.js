@@ -1,14 +1,17 @@
-import React from 'react'
+import React ,{useEffect,useState}from 'react'
 import '../style/details.css'
 import {useSelector} from 'react-redux';
 import {useParams ,Link} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
+import { addCart } from '../../feautures/cart/cartSlice';
 
 const Details = () => {
+  const dispatch = useDispatch()
   const products = useSelector(state=>state.product);
-  const cartProduct = useSelector(state=>state.price)
+  const cart = useSelector(state=>state.cart);
   let {id} = useParams();
-
   const singleProduct = products[id]
+  console.log(cart)
 
   return (
     <div>
@@ -19,7 +22,7 @@ const Details = () => {
           <a href='#'>Visit the DZYN Furnitures Store</a>
           <h2>₹{singleProduct.amount}</h2>
           <div className='buttons'>
-            <button className='cart_button'>Add to Cart</button>
+            <button className='cart_button' onClick={()=>{dispatch(addCart(singleProduct))}} >Add to Cart</button>
             <button className='buy_button'>Buy Now</button>
           </div>
         </div>

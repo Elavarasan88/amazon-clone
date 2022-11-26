@@ -10,11 +10,15 @@
     margin: 5px 5px;
     background-color: white;
     padding: 10px 20px;
+    border: none;
     height: 350px;
     line-height: 1.7;
 }
+.single_of_product:hover{
+    border: 1px solid gray;
+}
 .single_img{
-    max-height: 60%;
+    height: 200px;
     object-fit: contain;
 }
 .cart_button{

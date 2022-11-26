@@ -56,6 +56,7 @@
     font-weight: 600;
 }
 .header__option__cart{
+    color: white;
     margin: 7px;
     padding: 3px;
     display: flex;

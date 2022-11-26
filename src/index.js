@@ -5,9 +5,11 @@ import App from './App';
 import {Provider} from 'react-redux'
 import {configureStore} from '@reduxjs/toolkit'
 import productReducer from './feautures/product/productSlice'
+import cartReducer from './feautures/cart/cartSlice'
 const store = configureStore({
   reducer:{
-    product:productReducer
+    product:productReducer,
+    cart : cartReducer
   }
 })
 
